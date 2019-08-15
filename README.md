@@ -6,7 +6,8 @@
 ## windows环境搭建  
 1、下载[OpenResty](http://openresty.org/en/download.html)并按照官网步骤安装。  
 2、克隆本项目后将**lib/resty**文件夹拷贝至**your\path\to\openresty-1.13.6.2-win64\lualib\resty**。  
-3、进入openresty目录，cmd运行
+3、在本工程目录下创建logs文件夹  
+4、进入openresty目录，cmd运行
 ```
 nginx.exe -p /your/path/to/API-Gateway/ -c /your/path/to/API-Gateway/conf/nginx.conf
 ```   

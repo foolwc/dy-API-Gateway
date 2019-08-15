@@ -71,3 +71,10 @@ POST请求体JSON格式：
 ```
 curl -XPOST -H "Content-Type:application/json" -d '{"upstream":{"127.0.0.1:8000":1},"domain":"ccc.com","id":1}' 'http://192.168.172.1:8080/status'
 ```
+
+## 验证
+Host即为访问的域名，需要绑定Host至本机；
+网关默认监听8080端口。
+```
+curl 'http://127.0.0.1:8080' -H 'host:aaa.com'
+```
